@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:100,300,400,500,700,800,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Heebo', sans-serif;
+}
+
+body{
+    background: rgb(231, 231, 231);
+}
+
+.container-all{
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.main-title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container-box a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.box{
+    width: 250px;
+    height: 180px;
+    padding: 20px;
+    margin: 20px;
+    background: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.box:hover{
+    transform: translate(5px, -5px);
+    box-shadow: -10px 10px 20px -10px rgba(0, 0, 0, 0.5);
+}
+
+
+.box .icon,
+.box h4,
+.box p{
+    position: relative;
+    z-index: 1;
+    transition: all 200ms;
+}
+
+.box .icon{
+    font-size: 40px;
+    color: rgb(24, 211, 124);
+    transform: translateY(30px);
+}
+
+.box:hover .icon{
+    color: white;
+    font-size: 30px;
+    transform: translateY(0);
+}
+
+.box h4,
+.box p{
+    margin-top: 10px;
+}
+
+.box h4{
+    font-size: 30px;
+    transform: translateY(30px);
+}
+
+.box:hover h4{
+    transform: translateY(0);
+    color: white;
+}
+
+.box p{
+    font-size: 14px;
+    transform: translateY(100px);
+    opacity: 0;
+}
+
+.box:hover p{
+    transform: translateY(0);
+    opacity: 1;
+    color: white;
+}
+
+
+
+.box .background-hover{
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    top: 250px;
+    left: -170px;
+    border-radius: 100%;
+    transition: all 300ms;
+    background: linear-gradient(to bottom, rgb(255, 115, 0), rgb(255, 148, 48));
+}
+
+.box:hover .background-hover{
+    width: 400px;
+    height: 400px;
+    top: -70px;
+    left: -70px;
+}
+
+/* Cambiar color de las diferentes cajas*/
+
+
+/* Box1 */
+.box1 .icon{
+    color: #3dc315;
+}
+
+.box1 .background-hover{
+    background: linear-gradient(to bottom, #3dc315, #fdb42a);
+}
+
+/* Box2 */
+.box2 .icon{
+    color: #0090ea;
+}
+
+.box2 .background-hover{
+    background: linear-gradient(to bottom, #00d3d3, #0090ea);
+    top: -170px;
+    left: -250px;
+}
+
+/* Box3 */
+.box3 .icon{
+    color: #9d00f0;
+}
+
+.box3 .background-hover{
+    background: linear-gradient(to bottom, #d300cb, #9d00f0);
+    top: 170px;
+    left: 500px;
+}
+
+/* Box4 */
+.box4 .icon{
+    color: #ffa700;
+}
+
+.box4 .background-hover{
+    background: linear-gradient(to bottom, #dd0f0f, #ffa700);
+    top: -170px;
+    left: 500px;
+}
+
+
+/* Box5 */
+.box5 .icon{
+    color: #ea003f;
+}
+
+.box5 .background-hover{
+    background: linear-gradient(to bottom, #e33a67, #ea003f);
+}
+
+
+/* Box6 */
+.box6 .icon{
+    color: #5980d8;
+}
+
+.box6 .background-hover{
+    background: linear-gradient(to bottom, #2036dd, #5980d8);
+    top: -170px;
+    left: 500px;
+}
+
+
+
